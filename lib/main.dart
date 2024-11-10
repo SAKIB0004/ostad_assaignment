@@ -11,7 +11,7 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: "Hello World",
+      title: "My App",
       home: myProfile(),
     );
   }
