@@ -33,53 +33,56 @@ class myProfile extends StatelessWidget {
           //SizedBox(width: 10,),
         ],
       ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          CircleAvatar(
-            radius: 90,
-            backgroundColor: Colors.purple.shade100,
-            child: Icon(
-              Icons.icecream,
-              size: 80,
+      body: Padding(
+        padding: EdgeInsets.all(10.0),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            CircleAvatar(
+              radius: 70,
+              backgroundColor: Colors.purple.shade100,
+              child: Icon(
+                Icons.icecream_outlined,
+                size: 60,
+              ),
             ),
-          ),
-          Text(
-            "Ice cream is very delicious right?",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-          ),
-          SizedBox(
-            height: 35,
-          ),
-          CircleAvatar(
-            radius: 90,
-            backgroundColor: Colors.purple.shade100,
-            child: Icon(
-              Icons.code,
-              size: 80,
+            Text(
+              "Ice cream is very delicious right?",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
-          ),
-          Text(
-            "Programming is not boring if you love it",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-          ),
-          SizedBox(
-            height: 35,
-          ),
-          CircleAvatar(
-            radius: 90,
-            backgroundColor: Colors.purple.shade100,
-            child: Icon(
-              Icons.egg,
-              size: 80,
+            SizedBox(
+              height: 30,
             ),
-          ),
-          Text(
-            "If you submit code directly copy from chatgpt then mark will 0",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-          )
-        ],
+            CircleAvatar(
+              radius: 70,
+              backgroundColor: Colors.purple.shade100,
+              child: Icon(
+                Icons.code,
+                size: 60,
+              ),
+            ),
+            Text(
+              "Programming is not boring if you love it",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            ),
+            SizedBox(
+              height: 30,
+            ),
+            CircleAvatar(
+              radius: 70,
+              backgroundColor: Colors.purple.shade100,
+              child: Icon(
+                Icons.egg_outlined,
+                size: 60,
+              ),
+            ),
+            Text(
+              "If you submit code directly copy from chatgpt then mark will 0",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            )
+          ],
+        ),
       ),
     );
   }
